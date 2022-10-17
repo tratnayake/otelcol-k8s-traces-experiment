@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: go-sample-server
+spec:
+  containers:
+  - name: go-sample-server
+    image: ghcr.io/lightstep/go-sample-server:1.0.0
+    ports:
+    - containerPort: 80
